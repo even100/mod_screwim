@@ -1,0 +1,5 @@
+ARG_ENABLE("mod_screwim", "Enable mod_screwim extension", "no");
+
+if (PHP_MOD_SCREWIM != "no") {
+    EXTENSION("mod_screwim", "mod_screwim.c");
+}
